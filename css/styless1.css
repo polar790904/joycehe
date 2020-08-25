@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html, body {
+height:100%;
+min-height:320px;
+margin:0;
+padding:0;
+}
+
+
+#menu {  }
+
+.navbar { 
+         padding-top:20px;
+		 padding-bottom:20px;
+		 } /*navbar(menu)高度*/
+.navbar a:hover { color:#FFF }
+
+.designnamelogo { 
+         font-family: 'Pinyon Script', cursive;
+		 font-weight:600;
+		 font-size:34px;
+		 color:#FFF;
+		 text-shadow:3px 3px 3px #333;
+		 text-decoration:none;
+		 }
+
+#navbarSupportedContent ul li { 
+         padding: 0px 30px 0px 30px;
+		 }  /*munu(li)間隔*/
+.nav-item a { 
+         color:#FFF;
+		 font-size:16px;
+		 font-family: 'Baloo Tamma 2', cursive;
+		 letter-spacing:1px;
+		 font-weight:500;
+		 color:#FFF;
+		 text-shadow:3px 3px 3px #333;
+		 text-decoration:none;
+           }
+/*carousel full screen*/		 
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+	     height:100vh;
+		 width:auto;
+}
+.carousel-inner .carousel-item > img {
+	     animation:zoom;
+		 -webkit-animation:zoom;
+         -moz-animation:zoom;
+         -o-animation:zoom;
+		 animation-duration:25s;
+	
+}
+/*carousel full screen*/	
+
+.carousel-indicators { margin-bottom:60px }
+
+@keyframes zoom { 
+      0% { transform:scale(1,1)} 
+	  50% { transform:scale(1.2,1.2)} 
+	  100% { transform:scale(1.5,1.5)} 
+	  }
+
+.footertext { 
+    font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+    color:#FFF; 
+    margin-bottom:15px;
+	opacity:0.6;
+	 }
+	 
+@media screen and (max-width:992px){
+	
+	#navbarSupportedContent ul { position:relative; height:500px; overflow-y:scroll }
+	#navbarSupportedContent ul li { 
+         padding: 12px 30px 12px 30px;
+		 margin-top:15px;
+		 background-color:#333;
+		 }  /*munu(li)間隔*/
+}
+	
