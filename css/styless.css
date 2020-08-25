@@ -85,12 +85,29 @@ padding:0;
 	 
 @media screen and (max-width:992px){
 	
-	#menu { height:80%; overflow:auto; }  /*fixed超出定位*/
-	
+	#menu { height:150px; overflow:auto; }  /*fixed超出定位*/
 	#navbarSupportedContent ul li { 
          padding: 12px 30px 12px 30px;
 		 margin-top:15px;
 		 background-color:#333;
 		 }  /*munu(li)間隔*/
+}
+
+@media screen and (max-width:640px){
+	
+	.carousel-caption h5 { font-size:54px;line-height:42px; }
+	
+}
+
+@media screen and (max-width:480px){
+	
+	.carousel-caption h5 { font-size:48px;line-height:34px; }
+	
+}
+
+@media screen and (max-width:420px){
+	
+	.carousel-caption h5 { font-size:38px;line-height:28px; }
+	
 }
 	
