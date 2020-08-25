@@ -85,7 +85,7 @@ padding:0;
 	 
 @media screen and (max-width:992px){
 	
-	#menu { height:150px; overflow:auto; }  /*fixed超出定位*/
+	#menu { height:280px; overflow:auto; }  /*fixed超出定位*/
 	#navbarSupportedContent ul li { 
          padding: 12px 30px 12px 30px;
 		 margin-top:15px;
