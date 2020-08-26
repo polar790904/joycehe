@@ -65,7 +65,7 @@ body:after {
 .about, .contact {  
          position:relative; 
 		 margin-top:350px;
-		 background-color:rgb(50,50,50,0.95);
+		 background-color:rgba(50,50,50,0.95);
 		 padding:50px;
 		 height:auto;
 		 padding-bottom:150px;
@@ -74,7 +74,7 @@ body:after {
 .projects {  
          position:relative; 
 		 margin-top:200px;
-		 background-color:rgb(50,50,50,0.95);
+		 background-color:rgba(50,50,50,0.95);
 		 height:auto;
 		 padding-bottom:150px;
 		  }
@@ -108,7 +108,7 @@ body:after {
 }	  
 		  
 #name_box, #contact_box { 
-         background-color:rgb(245,245,245);
+         background-color:rgba(245,245,245);
 		 height:300px;
 		 position:absolute;
 		 top:-200px;
@@ -220,7 +220,7 @@ body:after {
 	}	
 
 #bottom {
-	background-color:rgb(50,50,50,0.95);
+	background-color:rgba(50,50,50,0.95);
 	padding-bottom:15px;
 	}		 
 #gotop i {
@@ -257,7 +257,15 @@ body:after {
 } 	 
 	 
 @media screen and (max-width:1024px){
-#contact_box p {
+#name_box, #contact_box { 
+         background-color:rgba(245,245,245);
+		 height:300px;
+		 position:absolute;
+		 top:-200px;
+		 padding:25px;
+		 animation:box 8s;
+          }
+#name_box p, #contact_box p {
 		 font-size:32px;
 		 color:#333;
 		 font-family: 'Rufina', serif;
@@ -265,7 +273,7 @@ body:after {
 		 letter-spacing:2px;
 		 padding-top:25px;
          }
-#contact_box span {
+#name_box span, #contact_box span {
 		 color:#333;
 		 font-family: 'Allura', cursive;
 		 font-size:22px;
@@ -275,7 +283,7 @@ body:after {
          }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px){	
 #contact_info h2, #contact_info p {
 	text-align:center
 	}
