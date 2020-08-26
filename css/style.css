@@ -11,6 +11,7 @@
 html, body {
 	margin:0;
 	padding:0;
+	overflow-X:hidden
 }
 
 a { color:#FFF; text-decoration:none }
@@ -297,6 +298,9 @@ body:after {
 	border-radius:999rem;
 	margin-left:0%;
 	}
+#name_pic p {
+	margin-left:0%;
+	}	
 #name_info {
 	margin-top:80px;
 	}	
