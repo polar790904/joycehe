@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>無標題文件</title>
+
+<!--bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--bootstrap-->
+
+<!--icon-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--icon-->
+
+<!--meun-->
+<link rel="stylesheet" href="css/style.css"/>
+<!--meun-->
+
+<!--loading-->
+<link rel="stylesheet" href="css/loading.css"/>
+<!--loading-->
+
+<style>
+
+</style>
+
+</head>
+
+<body style="background-image:url(image/backgroundimage/space.jpg);background-position:50% 50%;">
+
+<!--LODADING-->
+<div class="loading">
+<p>JoyceHe<br /><span>PORTFOLIO WEBSITE</span></p>
+<div id="myProgress">
+  <div id="myBar">
+    <div id="label"></div>
+  </div>
+</div>
+</div>
+<!--LODADING-->
+
+<!--MENU-->
+<header>
+<div id="menu" class="container fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a style="text-decoration:none" class="designnamelogo" href="index.html">JoyceHe</a>
+<button style="background-color:#FFF" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div data-spy="scroll" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav" href="about.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav" href="projects.html">Projects</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav" href="contact.html">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</header>
+<!--MENU-->
+
+<!--CONTENT-->
+<section>
+<div class="col-md-12 text-center about" id="contact">    
+   <div style="position:relative" class="row">
+ 
+    <!--ContactBox-->
+       <div class="col-md-3 col-sm-6 col-8 offset-md-1 offset-sm-3 offset-2 text-left" class="contact_box" id="contact_box">
+       <div style="height:2px; width:30px; background-color:#333"></div>
+       <p>Contact<br />Designer</p>
+       <span>Joyce He.</span>
+       </div>
+    <!--ContactBox-->
+   </div>
+   
+    <div class="col-md-10 offset-md-1">
+      <div class="row">
+    <!--Contacttext-->
+       <div class="col-lg-5 col-md-12" class="contact_info" id="contact_info">
+         <h2>HELLO!</h2>
+         <p>FOR GENERAL QUESTIONS AND INQUIRIES<br />
+
+PLEASE FILL OUT THE CONTACT FORM</p>
+        
+        <p style="margin-top:65px">OR SEND AN EMAIL TO</p>
+        
+        <a href="mailto:joycehe@gmail.com" onClick="ga('send', 'event', 'email', 'click');"><p>joycehe@gmail.com</p></a>
+
+       </div>
+    <!--Contacttext-->
+     
+    <!--ContactFROM--> 
+       <div class="col-lg-7 col-md-12 text-left" class="contact_from" id="contact_from">
+       
+       <form>
+
+<div class="row">
+    <div id="from_title" class="col-md-12">NAME*</div>
+    <div class="col-md-2">
+    <select  name="sex" id="sex" class="form-control from_btn">
+       <option value="Mr.">Mr.</option>
+       <option value="Mrs.">Mrs.</option>
+    </select>
+    </div>
+    <div class="col-md-5">
+      <input name="name_first" id="name_first" type="text" class="form-control from_btn" placeholder="First Name">
+    </div>
+    <div class="col-md-5">
+      <input name="name_last" id="name_last" type="text" class="form-control from_btn" placeholder="Last Name">
+    </div>
+  </div>
+  
+<br>  
+  
+<div class="row">
+    <div id="from_title" class="col-md-12">INFORMATION*</div>
+    <div class="col-md-6">
+      <input id="phone" name="phone" type="tel" class="form-control from_btn" placeholder="Phone Number">
+    </div>
+    <div class="col-md-6">
+      <input name="mail" id="mail" type="email" class="form-control from_btn" placeholder="E-mail">
+    </div>
+  </div>
+
+<br> 
+
+<div class="row">
+    <div id="from_title" class="col-md-12">MESSAGES*</div>
+<div class="col-md-12">
+    <textarea  name="content" id="contents" class="form-control from_btn" rows="5"></textarea>
+</div>  
+</div>
+
+<button id="send" style="padding:8px 50px 8px 50px;color:#FFF; margin-top:25px" type="submit" class="btn"><span style="letter-spacing:3px">SEND</span></button>
+  
+</form>
+
+       </div>
+    <!--ContactFROM--> 
+     </div>
+   </div> 
+</div>
+</section>
+
+
+<section>
+ <!--Footer--> 
+ <div class="col-md-12 text-center" id="bottom">
+     <div id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+     <div class="footertext">Copyright © 2020 JoyceHe Designed by HershChen</div>
+  </div>
+  <!--Footer--> 
+</section>
+
+<!--CONTENT-->
+
+</body>
+
+<script>
+/* LODAING完載入 */
+$(document).ready(function(){
+  var elem = document.getElementById("myBar");   /* 進度條 */
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("label").innerHTML = width * 1  + '%';
+    }
+  }
+   $(window).load(function(){
+        $(".loading").delay(2500).fadeOut(1000)   /* 延遲淡出 */
+    });
+});
+</script>
+<script>
+/* 漢堡展開事件 */
+var i=0;
+        $(".navbar-toggler").click(function() {
+            if(i==0){
+                 $("#menu").css({"height":"100%","background-color":"rgb(100,100,100,0.9)","overflow":"auto"});
+                 i=1;
+            }else  {
+                 $("#menu").removeAttr("style"); /* 消除CSS */
+                 i=0;
+            }
+			 });
+</script>
+<script type="text/javascript">
+/* 按下GoTop回頂端 */
+$(function() {
+    $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回SCROLL到最頂上 */
+        return false;
+    });
+    
+});
+</script>   
+</html>

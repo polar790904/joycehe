@@ -12,13 +12,17 @@
 <script src="js/bootstrap.min.js"></script>
 <!--bootstrap-->
 
-<!--MENU樣式-->
-<link rel="stylesheet" href="css/styless.css"/>
-<!--MENU樣式-->
+<!--icon-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--icon-->
 
-<!--MENU樣式-->
+<!--meun-->
+<link rel="stylesheet" href="css/style.css"/>
+<!--meun-->
+
+<!--loading-->
 <link rel="stylesheet" href="css/loading.css"/>
-<!--MENU樣式-->
+<!--loading-->
 
 <style>
 
@@ -26,7 +30,7 @@
 
 </head>
 
-<body>
+<body style="background-image:url(image/backgroundimage/space.jpg);background-position:50% 50%;">
 
 <!--LODADING-->
 <div class="loading">
@@ -39,6 +43,7 @@
 </div>
 <!--LODADING-->
 
+<!--MENU-->
 <header>
 <div id="menu" class="container fixed-top">
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -63,56 +68,38 @@
 </nav>
 </div>
 </header>
+<!--MENU-->
 
+<!--CONTENT-->
 <section>
-<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item  active" style="background-image: url('http://www.tcplanning.com/archive/images/index/12083.jpg')">
-      <div class="carousel-caption d-md-block text-left">
-    <h5>Commercial<br />Space<br />Design</h5>
-    <p>this text....</p>
-  </div>
-      
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('http://www.dayi-design.com.tw/archive/images/indexset/IMG_0277-0.jpg')">
-      <div class="carousel-caption d-md-block text-center">
-    <h5>Commercial Space Design</h5>
-    <p>this text....</p>
-  </div>
-      
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('http://www.dayi-design.com.tw/archive/images/indexset/D0136.jpg')">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  </div>
+<div class="col-md-12 text-center projects" id="projects">
+   <div class="projects_box">
+       <div class="a">1</div>
+       <div class="b">2</div>
+       <div class="a">3</div>
+       <div class="b">4</div>
+       <div class="b">5</div>
+       <div class="a">6</div>
+       <div class="b">7</div>
+       <div class="a">8</div>
+   </div> 
+  </div>   
 </section>
 
 
 <section>
-<div class="container text-center fixed-bottom">
-<div class="footertext">
-Copyright © 2020 JoyceHe Designed by HershChen
-</div>
-</div>
+ <!--Footer--> 
+ <div class="col-md-12 text-center" id="bottom">
+     <div id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+     <div class="footertext">Copyright © 2020 JoyceHe Designed by HershChen</div>
+  </div>
+  <!--Footer--> 
 </section>
+
+<!--CONTENT-->
 
 </body>
+
 <script>
 /* LODAING完載入 */
 $(document).ready(function(){
@@ -146,4 +133,14 @@ var i=0;
             }
 			 });
 </script>
+<script type="text/javascript">
+/* 按下GoTop回頂端 */
+$(function() {
+    $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回SCROLL到最頂上 */
+        return false;
+    });
+    
+});
+</script>   
 </html>

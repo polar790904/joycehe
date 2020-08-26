@@ -19,6 +19,7 @@ padding:0;
 
 .designnamelogo { 
          font-family: 'Pinyon Script', cursive;
+		 margin-top:15px;
 		 font-weight:600;
 		 font-size:34px;
 		 color:#FFF;
@@ -27,15 +28,17 @@ padding:0;
 		 }
 		 
 #navbarSupportedContent ul li { 
-         padding: 0px 30px 0px 30px;
+         padding: 10px 30px 10px 30px;
+		 margin-top:15px;
+		 background-color:transparent;
 		 }  /*munu(li)間隔*/
+		 
 .nav-item a { 
          color:#FFF;
 		 font-size:16px;
 		 font-family: 'Baloo Tamma 2', cursive;
 		 letter-spacing:1px;
 		 font-weight:500;
-		 color:#FFF;
 		 text-shadow:3px 3px 3px #333;
 		 text-decoration:none;
            }
@@ -83,15 +86,6 @@ padding:0;
 	opacity:0.6;
 	 }
 	 
-@media screen and (max-width:992px){
-	
-	#menu { height:280px; overflow:auto; }  /*fixed超出定位*/
-	#navbarSupportedContent ul li { 
-         padding: 12px 30px 12px 30px;
-		 margin-top:15px;
-		 background-color:#333;
-		 }  /*munu(li)間隔*/
-}
 
 @media screen and (max-width:640px){
 	
