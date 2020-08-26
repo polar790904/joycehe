@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 html, body {
 	margin:0;
@@ -126,9 +127,9 @@ body:after {
          }
 #name_box span, #contact_box span {
 		 color:#333;
-		 font-family: 'Allura', cursive;
-		 font-size:32px;
-		 letter-spacing:3px;
+		 font-family: 'Great Vibes', cursive;
+		 font-size:26px;
+		 letter-spacing:1px;
 		 position:absolute;
 		 bottom:25px;
          }
