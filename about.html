@@ -25,12 +25,33 @@
 <!--loading-->
 
 <style>
+html, body {
+	margin:0;
+	padding:0;
+	overflow-X:hidden;
+}
+body { background:transparent; }
+body:after {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url(image/backgroundimage/12083.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+#bottom {
+	padding-bottom:15px;
+	}
 
 </style>
 
 </head>
 
-<body style="background-image:url(image/backgroundimage/space.jpg);background-position:50% 50%;">
+<body>
 
 <!--LODADING-->
 <div class="loading">
@@ -106,6 +127,40 @@
 
 
 <section>
+<div class="col-md-12 text-center follow" id="follow"> 
+  
+   <div style="position:relative" class="row">
+      <div class="col-md-12 follow_title visible ">
+        <h2>My Instagram feed</h2>
+      </div>
+   </div>
+   
+<a target="_blank" href="https://www.instagram.com/he._.70/">
+<div class="row square_box">
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+     <div style="background-image:url(image/projects/1571715127_thumb_400.jpg)" class="square_image visible"></div>
+</div>
+</a>
+
+
+      <div class="text-center" id="follow_con">
+      <a href="https://www.instagram.com/he._.70" class="follow_btn" role="button" aria-disabled="true">FOLLOW ME ON INSTAGRAM</a>
+      </div>
+   
+</section>
+
+
+<section>
  <!--Footer--> 
  <div class="col-md-12 text-center" id="bottom">
      <div id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
@@ -160,5 +215,40 @@ $(function() {
     });
     
 });
-</script>   
+</script>
+
+<script>
+// 視窗事件
+$( window ).scroll( function () {
+     
+    // 當視窗滾動到“區塊名稱” 以上500px (註1) 我這邊是以滾動到我的第二區塊 ＃about 為例   
+    if ( $( this ).scrollTop() > $( ".follow" ).offset().top - 600 ) {
+      //用 each 帶一個參數 i 
+      $( ".follow .visible" ).each( function ( i ) {
+        //讓所有 visible delay 200秒 刪除class 切換  fadeInUp
+        $( this ).delay( i * 200 ).queue( function () {
+          $( this ).removeClass( "visible" ).addClass( "fadeInUp" );
+        } );
+      } );
+    }
+	} );    
+</script>
+
+<script>
+// 視窗事件
+$( window ).scroll( function () {
+     
+    // 當視窗滾動到“區塊名稱” 以上500px (註1) 我這邊是以滾動到我的第二區塊 ＃about 為例   
+    if ( $( this ).scrollTop() > $( ".square_box" ).offset().top - 600 ) {
+      //用 each 帶一個參數 i 
+      $( ".square_box .visible" ).each( function ( i ) {
+        //讓所有 visible delay 200秒 刪除class 切換  fadeInUp
+        $( this ).delay( i * 400 ).queue( function () {
+          $( this ).removeClass( "visible" ).addClass( "fadeInUp" );
+        } );
+      } );
+    }
+	} );    
+</script>
+
 </html>

@@ -26,11 +26,34 @@
 
 <style>
 
+html, body {
+	margin:0;
+	padding:0;
+	overflow-X:hidden;
+}
+body { background:transparent; }
+body:after {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url(image/backgroundimage/12083.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+
+#bottom {
+	padding-bottom:15px;
+	}	
+	
 </style>
 
 </head>
 
-<body style="background-image:url(image/backgroundimage/space.jpg);background-position:50% 50%;">
+<body>
 
 <!--LODADING-->
 <div class="loading">
@@ -70,20 +93,61 @@
 </header>
 <!--MENU-->
 
+<div class="col-md-10 offset-md-1 projects_title text-left">
+<span>Commercial</span><br />
+<span>Exhibition Space</span><br />
+Design_Portfolio<br />
+</div>
+
 <!--CONTENT-->
 <section>
-<div class="col-md-12 text-center projects" id="projects">
-   <div class="projects_box">
-       <div class="a">1</div>
-       <div class="b">2</div>
-       <div class="a">3</div>
-       <div class="b">4</div>
-       <div class="b">5</div>
-       <div class="a">6</div>
-       <div class="b">7</div>
-       <div class="a">8</div>
+<div class="col-lg-12 text-center projects" id="projects">
+
+   <div class="row projects_con">
+     
+       <div class="box_1">
+          <div id="item_pic1" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"></div>
+          <div onclick="location.href='about.html'" id="item_info1" class="box_info1">
+             <h3>Project Name</h3><span>2020/08/30</span></div>
+       </div>
+       
+       <div class="box_2">
+          <div id="item_pic2" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"></div>
+          <div id="item_info2" class="box_info2">
+            <h3>Project Name</h3><span>2020/08/30</span></div>
+       </div>
+       
+       <div class="box_3">
+          <div id="item_pic3" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"></div>
+          <div id="item_info3" class="box_info3">
+            <h3>Project Name</h3><span>2020/08/30</span></div>
+       </div>
+       
+       <div class="box_4">
+          <div id="item_pic4" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"></div>
+          <div id="item_info4" class="box_info4">
+            <h3>Project Name</h3><span>2020/08/30</span></div>
+       </div>
+       
+       <div class="box_1">
+          <div id="item_pic5" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"></div>
+          <div id="item_info5" class="box_info1">
+             <h3>Project Name</h3><span>2020/08/30</span></div>
+       </div>
+       
+       <div class="box_2">
+          <div id="item_pic6" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"></div>
+          <div id="item_info6" class="box_info2">
+            <h3>Project Name</h3><span>2020/08/30</span></div>
+       </div>
+       
    </div> 
-  </div>   
+</div> 
+
+ 
+ 
+ 
+</div>   
 </section>
 
 
@@ -142,5 +206,65 @@ $(function() {
     });
     
 });
-</script>   
+</script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	
+  $("#item_info1").mouseenter(function(){
+  $("#item_info1").css({"background-color":"rgba(72, 181, 72, 1)",});
+  $("#item_pic1").css({"transform":"scale(1.5)"});
+  $("#item_info1").mouseleave(function(){
+  $("#item_info1").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic1").css({"transform":"scale(1)"});
+  });
+  });
+  
+  $("#item_info2").mouseenter(function(){
+  $("#item_info2").css({"background-color":"rgba(72, 181, 72, 1)",});
+  $("#item_pic2").css({"transform":"scale(1.5)"});
+  $("#item_info2").mouseleave(function(){
+  $("#item_info2").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic2").css({"transform":"scale(1)"});
+  });
+  });
+  
+  $("#item_info3").mouseenter(function(){
+  $("#item_info3").css({"background-color":"rgba(72, 181, 72, 1)",});
+  $("#item_pic3").css({"transform":"scale(1.5)"});
+  $("#item_info3").mouseleave(function(){
+  $("#item_info3").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic3").css({"transform":"scale(1)"});
+  });
+  });
+  
+  $("#item_info4").mouseenter(function(){
+  $("#item_info4").css({"background-color":"rgba(72, 181, 72, 1)",});
+  $("#item_pic4").css({"transform":"scale(1.5)"});
+  $("#item_info4").mouseleave(function(){
+  $("#item_info4").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic4").css({"transform":"scale(1)"});
+  });
+  });
+  
+  $("#item_info5").mouseenter(function(){
+  $("#item_info5").css({"background-color":"rgba(72, 181, 72, 1)",});
+  $("#item_pic5").css({"transform":"scale(1.5)"});
+  $("#item_info5").mouseleave(function(){
+  $("#item_info5").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic5").css({"transform":"scale(1)"});
+  });
+  });
+  
+  $("#item_info6").mouseenter(function(){
+  $("#item_info6").css({"background-color":"rgba(72, 181, 72, 1)",});
+  $("#item_pic6").css({"transform":"scale(1.5)"});
+  $("#item_info6").mouseleave(function(){
+  $("#item_info6").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic6").css({"transform":"scale(1)"});
+  });
+  });
+  
+});
+</script>
+
 </html>
