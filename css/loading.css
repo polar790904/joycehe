@@ -30,7 +30,6 @@
 	letter-spacing:8px;
     font-size:12px;
 	line-height:1.5;
-	margin-left:-12px;
 	color:#CCC;
 }
 #myProgress {
@@ -44,7 +43,6 @@
   -moz-transform: translate(-50%,-50%);
   transform:translate(-50%,-50%);
   margin-top:30px;
-  margin-left:-10px;
 }
 
 #myBar {
