@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap');
@@ -15,36 +15,23 @@ html, body {
 	overflow-X:hidden
 }
 
-a { color:#FFF; text-decoration:none }
-a:hover { color:#FFF; text-decoration:none }
-
-body:after {
-	content:"";
-	position:fixed;
-	left:0;
-	top:0;
-	right:0;
-	bottom:0;
-	z-index:-1;
-	display:block;
-	background-size:cover;
-}
- 
-
+a { color:rgba(255,255,255,1); text-decoration:none }
+a:hover { color:rgba(255,255,255,1); text-decoration:none }
 
 .navbar { 
          padding-top:20px;
 		 padding-bottom:20px;
 		 } /*navbar(menu)高度*/
-.navbar a:hover { color:#FFF }
+		 
+.navbar a:hover { color:rgba(255,255,255,1) }
 
 .designnamelogo { 
          font-family: 'Pinyon Script', cursive;
 		 margin-top:15px;
 		 font-weight:600;
 		 font-size:34px;
-		 color:#FFF;
-		 text-shadow:3px 3px 3px #333;
+		 color:rgba(255,255,255,1);
+		 text-shadow:3px 3px 3px rgba(51,51,51,1);
 		 text-decoration:none;
 		 }
 		 
@@ -55,12 +42,12 @@ body:after {
 		 }  /*munu(li)間隔*/
 		 
 .nav-item a { 
-         color:#FFF;
+         color:rgba(255,255,255,1);
 		 font-size:16px;
 		 font-family: 'Baloo Tamma 2', cursive;
 		 letter-spacing:1px;
 		 font-weight:500;
-		 text-shadow:3px 3px 3px #333;
+		 text-shadow:2px 2px 2px rgba(30,30,30,1);
 		 text-decoration:none;
            }
 
@@ -75,39 +62,26 @@ body:after {
 		  
 .projects {  
          position:relative; 
-		 margin-top:200px;
-		 background-color:rgba(50,50,50,0.95);
 		 height:auto;
 		 padding-bottom:150px;
 		  }
-.projects_box {
-	width:100%;
-    height:900px;
-    display:flex;
-    flex-wrap:wrap;
-	text-align:center;
-	}
-	
-.a {
-  flex: 0 0 25%;
-  background-color:yellow;
-  border-width:3px;
-  border-style:solid;
-  border-color:#FFF;
-}
+		  
+.projects_title{
+	    margin-top:245px;
+	  	color:rgba(255,255,255,1);
+		font-family: 'Playfair Display', serif;
+		font-size:72px; 
+		line-height:56px;
+		font-weight:600;
+		letter-spacing:2px;
+		text-shadow:1px 1px 5px rgba(51,51,51,1);
+		padding-bottom:10px;
+	    }
 
-.b {
-  flex: 0 0 25%;
-  background-color:#333;
-  transition:background-color 500ms ease-in;
-  border-width:1px;
-  border-style:solid;
-  border-color:#FFF;
-}
-
-.b:hover{
- background-color: green;
-}	  
+.projects_title span {
+	    font-size:62px;
+	    }		
+		
 		  
 #name_box, #contact_box { 
          background-color:rgba(245,245,245,1);
@@ -119,14 +93,14 @@ body:after {
           }
 #name_box p, #contact_box p {
 		 font-size:48px;
-		 color:#333;
+		 color: rgba(51,51,51,1);
 		 font-family: 'Rufina', serif;
 		 line-height:34px;
 		 letter-spacing:2px;
 		 padding-top:25px;
          }
 #name_box span, #contact_box span {
-		 color:#333;
+		 color: rgba(51,51,51,1);
 		 font-family: 'Great Vibes', cursive;
 		 font-size:26px;
 		 letter-spacing:1px;
@@ -136,7 +110,56 @@ body:after {
 #name_pic, #contact_info {
 	margin-top:150px;
 	}
+/*about Instagram*/	
+.follow {
+	background-color:rgba(235,235,235,0.9);
+	padding:150px 0px 150px 0px;
+	margin-bottom:80px;
+	}
 
+.follow_title h2 {
+	font-family: 'Playfair Display', serif;
+	font-size:64px;
+	letter-spacing:1px;
+	color:rgba(51,51,51,1);
+	font-weight:600;
+	}
+	
+.square_box{
+    position:relative;
+	margin-top:25px;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	
+}
+.square_image{
+	flex:1;
+	width:16.66%;
+	background-color:#CCC;
+	padding-bottom:16.66%;
+	min-width: 16.66%;
+    max-width: 16.66%;
+	background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;	
+}
+
+#follow_con {
+	margin-top:60px;
+	}
+.follow_btn {
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing:2px;
+	font-size:13px;
+	padding:15px 45px 15px 45px;
+	background-color:#036;
+	}
+/*about Instagram*/	
 #contact_info {
 	text-align:left;
 	}	
@@ -144,7 +167,7 @@ body:after {
 #name_pic p, #contact_info p {
 	font-family: 'Noto Sans TC', sans-serif;
 	line-height:2;
-	color:#FFF;
+	color: rgba(255,255,255,1);
 	font-size:15px;
 	letter-spacing:1px;
 	text-align:justify;
@@ -152,7 +175,7 @@ body:after {
 
 #contact_info h2{
 	font-family: 'Rufina', serif;
-	color:#FFF;
+	color: rgba(255,255,255,1);
 	font-size:32px;
 	line-height:1.5;
 	letter-spacing:2px;
@@ -188,7 +211,7 @@ body:after {
 	line-height:2;
 	color:#FFF;
 	letter-spacing:1px;
-	animation:info_from 5s
+	animation:info_from 5s;
 	}		
 	
 #name_info p {
@@ -221,10 +244,6 @@ body:after {
 	margin-bottom:5px
 	}	
 
-#bottom {
-	background-color:rgba(50,50,50,0.95);
-	padding-bottom:15px;
-	}		 
 #gotop i {
 	font-size:34px;
 	color:#FFF;
@@ -237,28 +256,18 @@ body:after {
     color:#FFF; 
 	opacity:0.4;
 	 }
-	 
-@media screen and (max-width:1366px){
-.projects_box {
-	width:100%;
-    height:900px;
-    display:flex;
-    flex-wrap:wrap-reverse;
-	text-align:center;
-	}
-.a {
-  flex: 0 0 50%;
-  background-color:yellow;
+
+.visible {
+  opacity: 0;
 }
 
-.b {
-  flex: 0 0 50%;
-  background-color:#333;
-  transition:background-color 500ms ease-in;
+
+.fadeInUp {
+  animation: fade-silderUp 2s ;
 }	
-} 	 
 	 
 @media screen and (max-width:1024px){
+/*about, contact box*/
 #name_box, #contact_box { 
          background-color:rgba(245,245,245);
 		 height:300px;
@@ -269,23 +278,35 @@ body:after {
           }
 #name_box p, #contact_box p {
 		 font-size:32px;
-		 color:#333;
+		 color: rgba(51,51,51,1);
 		 font-family: 'Rufina', serif;
 		 line-height:22px;
 		 letter-spacing:2px;
 		 padding-top:25px;
          }
 #name_box span, #contact_box span {
-		 color:#333;
+		 color: rgba(51,51,51,1);
 		 font-family: 'Allura', cursive;
 		 font-size:22px;
 		 letter-spacing:3px;
 		 position:absolute;
 		 bottom:25px;
          }
+/*about, contact box*/
+/*about Instagram image*/		 
+.square_image{
+	flex:1;
+	width:25%;
+	background-color:#CCC;
+	padding-bottom:25%;
+	min-width: 25%;
+    max-width: 25%;
+	background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;	
 }
-
-@media screen and (max-width:1024px){	
+/*about Instagram image*/	
+	 
 #contact_info h2, #contact_info p {
 	text-align:center
 	}
@@ -293,6 +314,8 @@ body:after {
 	margin-top:50px;
 	}
 }
+
+
 @media screen and (max-width:699px){
 #name_pic img {
 	width:60%;
@@ -325,4 +348,192 @@ body:after {
     0% { opacity: 0; transform: translateX(50px); }
 	40% { opacity: 0; transform: translateX(50px); }
     100% { opacity: 1; transform: translateX(0px) }
+}
+
+@keyframes fade-silderUp {
+	
+    0% { opacity: 0;  transform: translateY(-50px); }
+    100% { opacity: 1;  transform: translateY(0px); }
+}
+
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+  width:46%;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display:flex;
+  -webkit-flex-direction:row;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin:0;
+  padding:0;
+  background-size:cover;
+  background-repeat:repeat;
+  overflow:hidden;
+}
+
+.box_3, .box_4 {
+	flex-direction:row-reverse;
+	}
+
+.box_pic {
+  flex:1;
+  padding-bottom:50%;
+  border-width:1px;
+  border-style:solid;
+  color: rgba(255,255,255,1);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  transition: 1000ms ease-in;
+
+}
+
+.box_info1, .box_info2, .box_info3, .box_info4 {
+  flex:1;
+  position:relative;
+  cursor:pointer;
+  background-color: rgba(50, 50, 50, 1);
+  border-width:1px;
+  border-style:solid;
+  color: rgba(255,255,255,1);
+  text-align:left;
+  transition: 500ms ease-in;
+}
+
+
+.projects_con {
+	margin-left:8%;
+	}
+
+.projects_con h3 {
+  color: rgba(255,255,255,1);
+  font-family: 'Ubuntu', sans-serif;
+  font-size:24px;
+  margin-top:15%;
+	}
+	
+.box_info1 h3, .box_info2 h3 {  
+  border-left:5px solid;
+  margin-left:-5px;
+  padding:15px;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }
+
+.box_info3 h3,.box_info4 h3 {  
+  border-right:5px solid;
+  margin-right:-5px;
+  padding:15px;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }  
+
+  
+.box_info1 span, .box_info2 span, .box_info3 span, .box_info4 span { 
+  position:absolute;
+  color :rgba(255,255,255,1);
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size:13px;
+  letter-spacing:5px;
+  padding:30px;
+  bottom:5px;
+  } 
+  
+
+
+@media screen and (max-width:1440px){
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6{ width:50%; }	
+.projects_con {
+	    margin-left:-15px;
+	}
+	
+.projects_title{
+	    margin-top:250px;
+		font-size:62px; 
+		line-height:42px;
+	    }
+
+.projects_title span {
+	    font-size:52px;
+	    }	
+}
+		
+@media screen and (max-width:960px){
+	
+.projects_title{
+	    margin-top:180px;
+		font-size:52px; 
+		line-height:32px;
+	    }
+
+.projects_title span {
+	    font-size:42px;
+	    }	
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6{ width:100% }
+.box_2 { flex-direction:row-reverse; }
+.box_3 { flex-direction:row }
+
+.projects_con {
+	margin-left:-15px;
+	}
+
+.box_info2 h3 {
+  border-left:0px solid;
+  border-right:5px solid;
+  margin-left:0px;
+  margin-right:-5px;
+  padding:15px;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }
+  
+.box_info3 h3 {
+  border-right:0px solid;
+  border-left:5px solid;
+  margin-right:0px;
+  margin-left:-5px;
+  padding:15px;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }  
+
+}
+
+
+@media screen and (max-width:640px){
+/*about Instagram*/	
+.follow_title h2 {
+	font-size:36px;
+	}
+.square_image{
+	flex:1;
+	width:50%;
+	background-color:#CCC;
+	padding-bottom:50%;
+	min-width: 50%;
+    max-width: 50%;
+	background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;	
+}
+/*about Instagram*/	
+}
+
+
+@media screen and (max-width:560px){
+	
+.projects_title{
+	    margin-top:180px;
+		font-size:42px; 
+		line-height:26px;
+	    }
+
+.projects_title span {
+	    font-size:42px;
+	    }	
+	
 }
