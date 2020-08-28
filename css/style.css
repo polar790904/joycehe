@@ -537,3 +537,15 @@ a:hover { color:rgba(255,255,255,1); text-decoration:none }
 	    }	
 	
 }
+@media screen and (max-width:480px){
+	
+.projects_title{
+		font-size:38px; 
+		line-height:24px;
+	    }
+
+.projects_title span {
+	    font-size:38px;
+	    }	
+	
+}
