@@ -623,6 +623,15 @@ hr, .hr-white{
 		font-size:38px; 
 		line-height:24px;
 	    }
+		
+.projects_con h3 {
+	   font-size:18px; 
+	}	
+	
+.box_info1 p, .box_info2 p, .box_info3 p, .box_info4 p { 
+  margin-top:-12px;
+  font-size:11px;
+  }		
 
 .projects_title span {
 	    font-size:38px;
