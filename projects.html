@@ -198,6 +198,19 @@ $(document).ready(function(){
     });
 });
 </script>
+<script>
+/* 漢堡展開事件 */
+var toggler=0;
+        $(".navbar-toggler").click(function() {
+            if(toggler==0){
+                 $("#menu").css({"height":"100%","background-color":"rgba(100,100,100,0.9)","overflow":"auto"});
+                 toggler=1;
+            }else  {
+                 $("#menu").removeAttr("style"); /* 消除CSS */
+                 toggler=0;
+            }
+			 });
+</script>
 <script type="text/javascript">
 /* 按下GoTop回頂端 */
 $(function() {
