@@ -123,7 +123,7 @@ hr, .hr-white{
 		letter-spacing:2px;
 		text-shadow:1px 1px 5px rgba(51,51,51,1);
 		padding-bottom:10px;
-		animation:box 8s;
+		animation:box 5s;
 	    }
 
 .projects_title span {
@@ -137,7 +137,7 @@ hr, .hr-white{
 		 position:absolute;
 		 top:-200px;
 		 padding:45px;
-		 animation:box 8s;
+		 animation:box 5s;
           }
 #name_box p, #contact_box p {
 		 font-size:48px;
@@ -150,8 +150,8 @@ hr, .hr-white{
 #name_box span, #contact_box span {
 		 color: rgba(51,51,51,1);
 		 font-family: 'Great Vibes', cursive;
-		 font-size:26px;
-		 letter-spacing:1px;
+		 font-size:22px;
+		 letter-spacing:0px;
 		 position:absolute;
 		 bottom:25px;
          }
@@ -337,7 +337,6 @@ hr, .hr-white{
 		 position:absolute;
 		 top:-200px;
 		 padding:25px;
-		 animation:box 8s;
           }
 #name_box p, #contact_box p {
 		 font-size:32px;
@@ -349,9 +348,9 @@ hr, .hr-white{
          }
 #name_box span, #contact_box span {
 		 color: rgba(51,51,51,1);
-		 font-family: 'Allura', cursive;
-		 font-size:22px;
-		 letter-spacing:3px;
+		font-family: 'Great Vibes', cursive;
+		 font-size:20px;
+		 letter-spacing:0px;
 		 position:absolute;
 		 bottom:25px;
          }
@@ -593,6 +592,9 @@ hr, .hr-white{
     background-position:50% 50%;	
 }
 /*about Instagram*/	
+#name_box, #contact_box {
+	height:240px;
+	}
 }
 
 
@@ -615,7 +617,7 @@ hr, .hr-white{
 .projects_title span {
 	    font-size:42px;
 	    }	
-	
+#map { height: 280px;}	
 }
 @media screen and (max-width:480px){
 	
