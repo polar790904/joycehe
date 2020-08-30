@@ -25,12 +25,7 @@
 <!--loading-->
 
 <style>
-html, body {
-	margin:0;
-	padding:0;
-	overflow-X:hidden;
-}
-body { background:transparent; }
+
 body:after {
 	content:"";
 	position:fixed;
@@ -43,10 +38,6 @@ body:after {
 	background:url(image/backgroundimage/12083.jpg) no-repeat 50% 50%;
 	background-size:cover;
 }
-#bottom {
-	padding-bottom:15px;
-	}
-
 </style>
 
 </head>
@@ -76,7 +67,7 @@ body:after {
   <div data-spy="scroll" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item">
-        <a class="nav" href="about.html">About Me</a>
+        <a class="nav active" href="about.html">About Me</a>
       </li>
       <li class="nav-item">
         <a class="nav" href="projects.html">Projects</a>
@@ -190,19 +181,22 @@ $(document).ready(function(){
   }
    $(window).load(function(){
         $(".loading").delay(2500).fadeOut(1000)   /* 延遲淡出 */
+		setTimeout(function(){
+		$('html,body').css("height","auto");
+	},2500);
     });
 });
 </script>
 <script>
 /* 漢堡展開事件 */
-var i=0;
+var toggler=0;
         $(".navbar-toggler").click(function() {
-            if(i==0){
+            if(toggler==0){
                  $("#menu").css({"height":"100%","background-color":"rgba(100,100,100,0.9)","overflow":"auto"});
-                 i=1;
+                 toggler=1;
             }else  {
                  $("#menu").removeAttr("style"); /* 消除CSS */
-                 i=0;
+                 toggler=0;
             }
 			 });
 </script>
