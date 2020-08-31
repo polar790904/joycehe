@@ -138,7 +138,7 @@ hr, .hr-white{
 		 position:absolute;
 		 top:-200px;
 		 padding:45px;
-		 animation:box 5s;
+		 animation:box 6s;
           }
 #name_box p, #contact_box p {
 		 font-size:48px;
@@ -220,13 +220,14 @@ hr, .hr-white{
 	text-align:left;
 	}	
 
-#name_pic p, #contact_info p, #project_info p {
+#contact_info p, #project_info p, #name_info p {
 	margin-top:50px;
 	font-family: 'Noto Sans TC', sans-serif;
 	line-height:2;
 	color: rgba(255,255,255,1);
 	font-size:15px;
 	letter-spacing:1px;
+	font-weight:300;
 	}	
 
 #contact_info h2 {
@@ -271,8 +272,8 @@ hr, .hr-white{
 	}
 
 #name_info h1 {
-	font-family: 'Noto Sans TC', sans-serif;
-	line-height:2;
+	font-family: 'Playfair Display', serif;
+	line-height:1.5;
 	color:#FFF;
 	letter-spacing:1px;
 	animation:info_from 5s;
@@ -283,6 +284,7 @@ hr, .hr-white{
 	line-height:2;
 	color:#FFF;
 	font-size:15px;
+	font-weight:300;
 	letter-spacing:1px;
 	margin-top:60px;
 	animation:info_from 5s
@@ -368,6 +370,9 @@ hr, .hr-white{
 	 
 @media screen and (max-width:1024px){
 /*about, contact box*/
+#name_info h1 {
+	     font-size:26px;
+          }
 #name_box, #contact_box { 
          background-color:rgba(245,245,245);
 		 height:300px;
